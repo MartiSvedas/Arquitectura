@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  mysql:
+    container_name: mysql3
+    image: mysql:8.0.29
+    ports:
+      - "34306:3306"
+    environment:
+      MYSQL_DATABASE: prueba1
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+
+
+
+# iniciar el container= docker compose -f mysql.yml up -d
+# parar el container= docker stop [container_name]
+# docker ps = listar todos los containers
